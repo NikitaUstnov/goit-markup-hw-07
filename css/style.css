@@ -1,8 +1,8 @@
-:root {
+/* :root {
   --text-color: #212121;
   --main-color: #2196f3;
   --contacts-color: #757575;
-}
+} */
 
 html {
   box-sizing: border-box;
@@ -11,12 +11,6 @@ html {
 * ::before,
 * ::after {
   box-sizing: inherit;
-}
-
-button:hover,
-button:focus {
-  color: #ffffff;
-  background-color: var(--active-color);
 }
 
 ul {

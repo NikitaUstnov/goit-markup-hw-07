@@ -58,14 +58,14 @@ header a {
   color: $textColor;
 
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $accentColor;
+  }
 }
 
 .active a {
-  color: $accentColor;
-}
-
-.nav-item a:hover,
-.nav-item a:focus {
   color: $accentColor;
 }
 
@@ -86,22 +86,24 @@ header a {
   padding-top: 32px;
   padding-bottom: 32px;
 
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.contacts-item a {
-  color: $textColor;
+  & a {
+    color: $textColor;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 
 .header-icon {
   margin-right: 10px;
-}
-.header-svg {
   fill: $textColor;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.contacts-item:hover {
-  color: $accentColor;
-}
-.contacts-item:hover {
+
+.contacts-item:hover .header-icon,
+.contacts-item:focus .header-icon {
   fill: $accentColor;
+}
+
+.contacts-item:hover a,
+.contacts-item:focus a {
+  color: $accentColor;
 }
