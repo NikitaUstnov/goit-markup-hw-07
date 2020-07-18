@@ -1,5 +1,5 @@
 %container {
-  width: 1170px;
+  width: 1200px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 94px;
@@ -17,4 +17,15 @@
   display: flex;
   margin-left: auto;
   margin-right: auto;
+}
+
+%sectionHeader {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  letter-spacing: 0.03em;
+  color: $textColor;
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 94px;
 }

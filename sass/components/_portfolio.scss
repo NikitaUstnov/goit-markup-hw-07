@@ -1,3 +1,7 @@
+.portfolio-container {
+  @extend %container;
+}
+
 .our-works h1 {
   visibility: hidden;
 }
@@ -24,7 +28,7 @@
 
 .filters-item:hover {
   color: #fff;
-  background-color: var(--main-color);
+  background-color: $accentColor;
 }
 
 .our-works .button {
@@ -87,7 +91,7 @@ h2 {
   padding: 20px 24px;
 }
 .our-works .item-title-works {
-  color: var(--text-color);
+  color: $textColor;
   font-size: 18px;
   line-height: 2;
   font-weight: 700;

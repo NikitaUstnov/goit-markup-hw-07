@@ -6,6 +6,11 @@
   padding-bottom: 94px;
 }
 
+.team-section-title {
+  @extend %sectionHeader;
+  margin-top: 0;
+}
+
 .palyers {
   justify-content: center;
   display: flex;

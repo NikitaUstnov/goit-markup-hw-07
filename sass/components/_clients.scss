@@ -2,8 +2,14 @@
   margin-top: 94px;
 }
 
+.clients-container {
+  @extend %container;
+}
+
 .list-clients {
-  @extend %sectionCenter;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .list-clients-item {
@@ -28,11 +34,12 @@
   color: #afb1b8;
 
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.box-clients:hover {
-  cursor: pointer;
-  border-color: var(--main-color);
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    border-color: $accentColor;
+  }
 }
 
 .clients-icon {
@@ -42,5 +49,5 @@
 }
 
 .box-clients:hover .clients-icon {
-  fill: var(--main-color);
+  fill: $accentColor;
 }

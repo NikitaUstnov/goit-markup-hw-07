@@ -7,9 +7,16 @@ html {
   box-sizing: inherit;
 }
 
+hr {
+  margin: 0;
+}
+
 ul {
   padding-inline-start: 0;
   margin: 0;
+}
+li {
+  list-style: none;
 }
 
 body {

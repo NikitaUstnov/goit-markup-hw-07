@@ -1,6 +1,6 @@
 footer {
-  color: #ffffff;
-  background-color: #2f303a;
+  color: $whiteColor;
+  background-color: $footerBg;
 }
 
 footer .container {
@@ -18,7 +18,7 @@ footer a {
 }
 
 footer .logo {
-  color: #ffffff;
+  color: $whiteColor;
   font-size: 22px;
 }
 
@@ -74,18 +74,20 @@ footer .social {
   background-color: rgba(255, 255, 255, 0.1);
   justify-content: center;
   display: flex;
-  color: #fff;
+  color: $whiteColor;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  /* transition: cubic-bezier(0.4, 0, 0.2, 1); */
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    background-color: $accentColor;
+    border-radius: 50%;
+  }
 }
-.social-link-footer:hover {
-  cursor: pointer;
-  background-color: var(--main-color);
-  border-radius: 50%;
-}
+
 .social-icon-footer {
-  fill: #fff;
+  fill: $whiteColor;
 }
 
 .form-item {
@@ -98,7 +100,7 @@ footer .social {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   height: 50px;
-  background-color: #2f303a;
+  background-color: $footerBg;
   margin-right: 10px;
   min-width: 350px;
 }
@@ -109,12 +111,12 @@ footer .social {
 
 .f-button {
   position: relative;
-  background-color: #2196f3;
+  background-color: $accentColor;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   height: 50px;
   width: 200px;
-  color: #fff;
+  color: $whiteColor;
   align-items: center;
   display: flex;
   padding-left: 30px;
@@ -137,7 +139,7 @@ footer .social {
 }
 
 .f-button:hover {
-  background-color: #2196f3;
+  background-color: $bthHovColor;
 }
 
 .f-button p {
