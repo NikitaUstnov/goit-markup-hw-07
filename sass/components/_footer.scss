@@ -1,0 +1,171 @@
+footer {
+  color: $whiteColor;
+  background-color: $footerBg;
+}
+
+footer .container {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 45px;
+  padding-bottom: 28px;
+}
+
+footer a {
+  text-decoration: none;
+  display: block;
+}
+
+footer .logo {
+  color: $whiteColor;
+  font-size: 22px;
+}
+
+.address-list li:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.address-item {
+  font-size: 14px;
+  font-style: normal;
+}
+
+footer .address-item a {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+footer .join {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 0.87;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+footer .social {
+  padding: 0;
+  display: flex;
+}
+
+.copyrights {
+  display: block;
+  font-size: 12px;
+  line-height: 2;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.4);
+  padding-top: 18px;
+  padding-bottom: 21px;
+}
+
+.social-list-footer {
+  margin-right: 10px;
+}
+
+.social-list-footer:last-child {
+  margin-right: 0;
+}
+
+.social-link-footer {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  justify-content: center;
+  display: flex;
+  color: $whiteColor;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    background-color: $accentColor;
+    border-radius: 50%;
+  }
+}
+
+.social-icon-footer {
+  fill: $whiteColor;
+}
+
+.form-item {
+  display: flex;
+}
+
+.form {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  height: 50px;
+  background-color: $footerBg;
+  margin-right: 10px;
+  min-width: 350px;
+}
+
+.form::placeholder {
+  margin-left: 15px;
+}
+
+.f-button {
+  position: relative;
+  background-color: $accentColor;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  height: 50px;
+  width: 200px;
+  color: $whiteColor;
+  align-items: center;
+  display: flex;
+  padding-left: 30px;
+  padding-right: 30px;
+  border: none;
+}
+
+.button-svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(150%, -50%);
+  opacity: 0;
+  transition-duration: 350ms;
+  transition-delay: 100ms;
+}
+
+.f-button:hover .button-svg {
+  opacity: 1;
+}
+
+.f-button:hover {
+  background-color: $bthHovColor;
+}
+
+.f-button p {
+  position: absolute;
+  margin: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  font-weight: bold;
+
+  transition-duration: 350ms;
+}
+
+.f-button:hover p {
+  transform: translate(-70%, -50%);
+}
+
+.form {
+  padding-left: 30px;
+}
+
+.form:focus,
+.form:hover {
+  background-color: #2f303a;
+  color: #fff;
+  outline: none;
+  cursor: pointer;
+}

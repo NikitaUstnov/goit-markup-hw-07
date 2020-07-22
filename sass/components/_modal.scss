@@ -1,0 +1,254 @@
+p {
+  margin: 0;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.close-modal-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  outline: none;
+
+  cursor: pointer;
+
+  background-color: #ffffff;
+}
+
+.close-modal-btn:hover,
+.close-modal-btn:focus {
+  background-color: #2196f3;
+
+  fill: #fff;
+
+  transform: scale(1.15);
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  width: 530px;
+  padding: 40px;
+
+  align-items: center;
+  justify-content: center;
+  font-style: inherit;
+  box-sizing: border-box;
+
+  background-color: #fff;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+
+.form-items {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal h1 {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  margin-bottom: 30px;
+
+  color: #212121;
+}
+
+.input-item {
+  height: 40px;
+  width: 100%;
+  box-sizing: border-box;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  outline: none;
+
+  padding-left: 42px;
+  padding-right: 18px;
+
+  cursor: pointer;
+}
+
+.input-item:hover .input-svg,
+.input-item:focus .input-svg {
+  border: 1px solid #2196f3;
+
+  fill: #2196f3;
+}
+
+.input-item.comment {
+  height: 120px;
+
+  padding: 12px 16px;
+}
+
+.label-item.comment {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  transform: translate(16px, 12px);
+
+  text-align: start;
+}
+
+.input-item:not(:placeholder-shown) ~ .label-item,
+.input-item:focus ~ .label-iteml {
+  color: #188ce8;
+
+  transform: translate(0px, -20px);
+}
+
+.form-field {
+  position: relative;
+  margin-bottom: 28px;
+}
+
+.form-field:focus-within .input-item {
+  border: 1px solid #2196f3;
+}
+
+.form-field:focus-within .input-svg {
+  fill: #2196f3;
+}
+
+.input-item:hover {
+  border: 1px solid #2196f3;
+}
+
+.label-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(42px, 11px);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+
+  color: #757575;
+}
+
+.form-field:focus-within .label-item {
+  color: #188ce8;
+
+  transform: translate(0px, -20px);
+}
+
+.input-svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(100%, 110%);
+
+  fill: black;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.checkbox {
+  display: inline-flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.checkbox-label {
+  display: inline-flex;
+  align-items: center;
+}
+
+.checkbox-label a {
+  margin-left: 4px;
+}
+
+.checkbox-label::before {
+  content: "";
+
+  display: block;
+  flex-shrink: 0;
+
+  width: 16px;
+  height: 16px;
+
+  margin-right: 8px;
+
+  border: 1px solid #000;
+  border-radius: 3px;
+
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.checkbox-field:checked ~ .checkbox-label::before {
+  background-image: url(../images/accept.svg);
+  background-color: #2196f3;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: 1px solid #188ce8;
+}
+
+.submit-btn {
+  width: 200px;
+  height: 50px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  outline: none;
+  color: #fff;
+  border: 1px solid #188ce8;
+  background-color: #188ce8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  cursor: pointer;
+
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.submit-btn:focus,
+.submit-btn:hover {
+  background-color: #0977d1;
+
+  transform: scale(0.99);
+}
