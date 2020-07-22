@@ -1,2 +1,3 @@
-# goit-markup-hw-06
- forms
+# goit-markup-hw-08
+
+adaptive responsive
