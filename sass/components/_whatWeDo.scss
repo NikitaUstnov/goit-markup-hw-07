@@ -1,5 +1,9 @@
 .activity {
   @extend %sectionCenter;
+
+  @media screen and (max-width: 480px) {
+    display: none;
+  }
 }
 
 .do-container {
@@ -17,6 +21,10 @@
 }
 .main-section-title {
   @extend %sectionHeader;
+
+  @media screen and (max-width: 480px) {
+    display: none;
+  }
 }
 .item-title {
   font-size: 14px;
