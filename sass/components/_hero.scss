@@ -1,56 +1,56 @@
-// .hero-container {
-//   background-image: linear-gradient(
-//       to right,
-//       rgba(47, 48, 58, 0.8),
-//       rgba(47, 48, 58, 0.8)
-//     ),
-//     url(../../images/Header_img.jpg);
-//   background-repeat: no-repeat;
-//   background-position: center;
-//   background-size: cover;
-//   text-align: center;
-//   width: 100%;
-//   height: 600px;
-//   margin-bottom: 94px;
-//   display: flex;
+.hero-container {
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.8),
+      rgba(47, 48, 58, 0.8)
+    ),
+    url(../../images/Header_img.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  width: 100%;
+  height: 600px;
+  margin-bottom: 94px;
+  display: flex;
 
-//   & {
-//     @extend %flexCenter;
-//   }
-// }
+  & {
+    @extend %flexCenter;
+  }
+}
 
-// .hero-title {
-//   font-weight: 900;
-//   font-size: 44px;
-//   line-height: 60px;
-//   letter-spacing: 0.06em;
-//   text-transform: uppercase;
-//   color: $whiteColor;
-// }
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: $whiteColor;
+}
 
-// .hero-button {
-//   background-color: #2196f3;
-//   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-//   border-radius: 4px;
-//   border: none;
-//   padding: 20px 33px;
+.hero-button {
+  background-color: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  padding: 20px 33px;
 
-//   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-//   &:hover,
-//   &:focus {
-//     background-color: $bthHovColor;
-//   }
-// }
+  &:hover,
+  &:focus {
+    background-color: $bthHovColor;
+  }
+}
 
-// .hero-button-text {
-//   font-weight: bold;
-//   font-size: 16px;
-//   line-height: 30px;
-//   display: flex;
-//   align-items: center;
-//   text-align: center;
-//   letter-spacing: 0.06em;
+.hero-button-text {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
 
-//   color: $whiteColor;
-// }
+  color: $whiteColor;
+}
