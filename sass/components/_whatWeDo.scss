@@ -1,7 +1,7 @@
 .activity {
   @extend %sectionCenter;
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 900px) {
     display: none;
   }
 }
@@ -21,11 +21,14 @@
 }
 .main-section-title {
   @extend %sectionHeader;
+}
 
-  @media screen and (max-width: 480px) {
+.activity-header {
+  @media screen and (max-width: 900px) {
     display: none;
   }
 }
+
 .item-title {
   font-size: 14px;
   text-align: center;
