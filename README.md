@@ -1,3 +1,2 @@
 # goit-markup-hw-08
-
-adaptive responsive
+goit-markup-hw-08
